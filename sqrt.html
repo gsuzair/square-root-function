@@ -1,0 +1,24 @@
+<div id="result"></div>
+<script>
+    /*under root*/
+    var number = 9; //can be taken as an input
+    var next = 0;
+    var arr = [];
+    var count = 0;
+    var count2 = 0;
+    var i = 0;
+    for(i = 0; i <= number; i++){
+        if(i % 2 != 0){
+            count++;
+            next = next + i;
+            if(next == number){
+                count2 = count;
+            }
+        }
+    }
+    if(count2 == 0){
+        document.getElementById("result").innerHTML = "not a square.";
+    } else {
+        document.getElementById("result").innerHTML = count2;
+    }  
+</script>
